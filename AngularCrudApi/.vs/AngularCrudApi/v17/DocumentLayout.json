@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP.Net Core\\AngularCrudApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A02A9C7-592F-4B94-B1D2-FFEED0654963}|AngularCrudApi.csproj|d:\\asp.net core\\angularcrudapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A02A9C7-592F-4B94-B1D2-FFEED0654963}|AngularCrudApi.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A02A9C7-592F-4B94-B1D2-FFEED0654963}|AngularCrudApi.csproj|d:\\asp.net core\\angularcrudapi\\context\\objmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A02A9C7-592F-4B94-B1D2-FFEED0654963}|AngularCrudApi.csproj|solutionrelative:context\\objmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A02A9C7-592F-4B94-B1D2-FFEED0654963}|AngularCrudApi.csproj|d:\\asp.net core\\angularcrudapi\\reposistry\\emplementuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A02A9C7-592F-4B94-B1D2-FFEED0654963}|AngularCrudApi.csproj|solutionrelative:reposistry\\emplementuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "objModel.cs",
+              "DocumentMoniker": "D:\\ASP.Net Core\\AngularCrudApi\\Context\\objModel.cs",
+              "RelativeDocumentMoniker": "Context\\objModel.cs",
+              "ToolTip": "D:\\ASP.Net Core\\AngularCrudApi\\Context\\objModel.cs",
+              "RelativeToolTip": "Context\\objModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T20:00:33.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmplementUser.cs",
+              "DocumentMoniker": "D:\\ASP.Net Core\\AngularCrudApi\\Reposistry\\EmplementUser.cs",
+              "RelativeDocumentMoniker": "Reposistry\\EmplementUser.cs",
+              "ToolTip": "D:\\ASP.Net Core\\AngularCrudApi\\Reposistry\\EmplementUser.cs",
+              "RelativeToolTip": "Reposistry\\EmplementUser.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAxwAkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T18:14:57.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\ASP.Net Core\\AngularCrudApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\ASP.Net Core\\AngularCrudApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwCcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T21:20:26.481Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

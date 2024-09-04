@@ -1,0 +1,120 @@
+<div class="navbar navbar-light bg-primary">
+    <div class=" container-fluid">
+        <h1 style="color: aliceblue;">Employee Dashboard</h1>
+       <div class="d-flex">
+        <button class="btn btn-info" (click)="clickAdd()" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Employee</button>
+       </div>
+
+    </div>
+</div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+       <form [formGroup]="formVale">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" formControlName="name"  class="form-control" id="Name" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email"  formControlName="email"  class="form-control" id="Email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="Address" class="form-label">Address</label>
+            <input type="text" formControlName="address"  class="form-control" id="Address" aria-describedby="AdddressHelp">
+          </div>
+       </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="Cancle" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="AddShow" (click)="PostEmployeeData()" class="btn btn-primary">Add</button>
+          <button type="button" *ngIf="UpdateShow" (click)="UpdateEmployeeData()" class="btn btn-info">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+
+<!-- <table class=" table table-dark mt-4 ">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Addres</th>
+            <th scope="col">Action</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of EmployeeDat">
+            <td>{{row.id}}</td>
+            <td>{{row.name}}</td>
+            <td>{{row.city}}</td>  
+            <td>{{row.address}}</td>
+            <td>
+                <button class="btn btn-primary mx-3"  data-bs-toggle="modal" data-bs-target="#exampleModal"  (click)="OnEdit(row)">Edit</button>
+                <button class="btn btn-danger" (click)="DeleteEmployeeData(row)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table> -->
+
+<div class="mat-elevation-z8">
+
+<table mat-table matSort [dataSource]="DataSource" >
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="ID">
+    <th mat-header-cell *matHeaderCellDef  > ID</th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="Name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header > Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="Email">
+    <th mat-header-cell *matHeaderCellDef> email </th>
+    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+  </ng-container>
+
+  <!-- Address Column -->
+  <ng-container matColumnDef="Address">
+    <th mat-header-cell *matHeaderCellDef> Address </th>
+    <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+  </ng-container>
+  <!-- Action Column -->
+  <ng-container matColumnDef="Action">
+    <th mat-header-cell *matHeaderCellDef> Action</th>
+    <td mat-cell *matCellDef="let element"> 
+    <button class="btn btn-info mx-3 "  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="OnEdit(element)" >Edit</button>
+    <button class="btn btn-danger " (click)="DeleteEmployeeData(element)" >Delete</button>
+    </td>
+  </ng-container>
+   
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>
+</div>
